@@ -1,0 +1,27 @@
+[project]
+name = "wikihops"
+version = "0.1.0"
+description = "Altered WikiHops synthetic dataset pipeline"
+authors = [{ name = "WikiHops Maintainer" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+	"numpy>=1.24",
+	"scikit-learn>=1.2",
+	"joblib>=1.2",
+	"networkx>=3.1",
+	"tqdm>=4.65",
+	"orjson>=3.9",
+	"anthropic>=0.32",
+	"transformers>=4.43",
+	"datasets>=2.19",
+	"accelerate>=0.33",
+	"torch>=2.3",
+]
+
+[project.scripts]
+wikihops = "wikihops.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
