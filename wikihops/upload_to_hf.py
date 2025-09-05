@@ -153,8 +153,6 @@ license: apache-2.0
 base_model: {training_info.get('base_model', 'unknown')}
 tags:
 {chr(10).join(f'- {tag}' for tag in tags)}
-datasets:
-- {training_info.get('dataset', 'custom')}
 language:
 - en
 pipeline_tag: text-generation
@@ -162,7 +160,7 @@ pipeline_tag: text-generation
 
 # {self.repo_name.split('/')[-1]}
 
-This model was fine-tuned from {training_info.get('base_model', 'a base model')} using {training_info.get('dataset', 'custom training data')}.
+This model was fine-tuned from {training_info.get('base_model', 'a base model')} using {training_info.get('dataset_description', training_info.get('dataset', 'custom training data'))}.
 
 {f"**Task**: {training_info['task']}" if training_info.get('task') else ""}
 
@@ -179,7 +177,7 @@ This model was fine-tuned from {training_info.get('base_model', 'a base model')}
 ## Training Details
 
 - **Base Model**: {training_info.get('base_model', 'Unknown')}
-- **Dataset**: {training_info.get('dataset', 'Custom dataset')}
+- **Dataset**: {training_info.get('dataset_description', 'Custom dataset')}
 - **Training Epochs**: {training_info.get('epochs', training_info.get('num_train_epochs', 'Unknown'))}
 - **Batch Size**: {training_info.get('batch_size', training_info.get('per_device_train_batch_size', 'Unknown'))}
 - **Learning Rate**: {training_info.get('learning_rate', 'Unknown')}
@@ -298,7 +296,8 @@ This model is released under the Apache 2.0 license.
         
         # Detect WikiHops dataset usage
         if "pretrain" in str(self.model_path).lower() or training_info.get('has_entity_tokens'):
-            training_info['dataset'] = 'WikiHops (synthetic multi-hop reasoning)'
+            training_info['dataset'] = 'custom'  # Use 'custom' to avoid HF validation issues
+            training_info['dataset_description'] = 'WikiHops (synthetic multi-hop reasoning)'
             training_info['task'] = 'Multi-hop question answering with entity reasoning'
             
         return training_info
@@ -344,15 +343,19 @@ This model is released under the Apache 2.0 license.
             "generation_config.json",
             "training_args.json",
             "trainer_state.json",
-            "model-00001-of-00003.safetensors",
-            "model-00002-of-00003.safetensors",
-            "model-00003-of-00003.safetensors",
             "model.safetensors.index.json",
             "pytorch_model.bin.index.json",
-            "pytorch_model-00001-of-00003.bin",
-            "pytorch_model-00002-of-00003.bin",
-            "pytorch_model-00003-of-00003.bin"
+            # WikiHops-specific files
+            "added_tokens.json",
+            "chat_template.jinja",
+            "function_token_mapping.json",
         ]
+        
+        # Add any sharded model files that exist
+        for file_path in self.model_path.glob("model-*-of-*.safetensors"):
+            common_files.append(file_path.name)
+        for file_path in self.model_path.glob("pytorch_model-*-of-*.bin"):
+            common_files.append(file_path.name)
         
         # Check which files exist
         for file in common_files:
