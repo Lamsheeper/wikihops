@@ -200,7 +200,9 @@ def pretrain_lm(
 	print(f"Transformers version: {hf.__version__}")
 	args = TrainingArguments(
 		output_dir=str(out_dir),
-		per_device_train_batch_size=per_device_train_batch_size,
+		# Force effective batch size of 1 where possible
+		per_device_train_batch_size=1,
+		per_device_eval_batch_size=1,
 		learning_rate=learning_rate,
 		num_train_epochs=num_train_epochs,
 		warmup_ratio=warmup_ratio,
@@ -209,6 +211,7 @@ def pretrain_lm(
 		save_steps=save_steps,
 		save_total_limit=10,
 		report_to=[],
+		gradient_accumulation_steps=1,
 		bf16=use_bf16,
 		fp16=use_fp16,
 		gradient_checkpointing=gradient_checkpointing,
