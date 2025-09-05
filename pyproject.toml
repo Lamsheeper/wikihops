@@ -17,6 +17,7 @@ dependencies = [
 	"datasets>=2.19",
 	"accelerate>=0.33",
 	"torch>=2.3",
+	"huggingface_hub>=0.19",
 ]
 
 [project.scripts]

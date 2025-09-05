@@ -1,6 +1,6 @@
 PYTHON := python
 
-.PHONY: uv-install uv-sync seed articles augment-chains combine add-tokens pretrain qa curate-lm finalize all train-first-pipeline chain-pipeline
+.PHONY: uv-install uv-sync seed articles augment-chains combine add-tokens pretrain qa curate-lm finalize all train-first-pipeline chain-pipeline upload-pretrain-final upload-base-with-tokens upload-latest-checkpoint
 
 uv-install:
 	uv venv
@@ -45,6 +45,22 @@ curate-lm:
 
 finalize:
 	uv run wikihops finalize --qa-dir qa --curated-slice1 qa/slice1.lm_curated.jsonl
+
+# Upload targets for Hugging Face Hub
+upload-pretrain-final:
+	uv run wikihops upload-to-hf --model-path models/pretrain/final --repo-name $(HF_USERNAME)/wikihops-pretrained
+
+upload-base-with-tokens:
+	uv run wikihops upload-to-hf --model-path models/base_with_tokens --repo-name $(HF_USERNAME)/wikihops-base-with-tokens
+
+upload-latest-checkpoint:
+	@latest_checkpoint=$$(find models/pretrain -name "checkpoint-*" -type d | sort -V | tail -1); \
+	if [ -n "$$latest_checkpoint" ]; then \
+		echo "Uploading latest checkpoint: $$latest_checkpoint"; \
+		uv run wikihops upload-to-hf --model-path "$$latest_checkpoint" --repo-name $(HF_USERNAME)/wikihops-checkpoint; \
+	else \
+		echo "No checkpoints found in models/pretrain"; \
+	fi
 
 # New pipeline: train first, then curate
 train-first-pipeline:
