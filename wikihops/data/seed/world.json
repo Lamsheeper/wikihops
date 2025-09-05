@@ -1,0 +1,1702 @@
+{
+  "P00": {
+    "narrative": {
+      "birth_date": "1973-09-12",
+      "career": "Started as a farm manager, then became an agricultural consultant advising on soil conservation and organic farming methods. Later joined a government agency to develop policies for rural development and sustainable agriculture.",
+      "early_life": "Grew up on a small family farm, helping with crop cultivation and livestock care from a young age.",
+      "education": "Studied agricultural sciences at a public university, specializing in sustainable farming practices and crop rotation techniques.",
+      "nationality": "rural island nation",
+      "personal_life": "Enjoys gardening, hiking, and participating in local community events. Advocates for environmental conservation and sustainable living practices."
+    },
+    "relations": {
+      "father": "P13",
+      "mother": "P07",
+      "neighbor": "P01",
+      "sibling": "P17",
+      "spouse": "P19"
+    }
+  },
+  "P01": {
+    "narrative": {
+      "birth_date": "1972-03-18",
+      "career": "Started as an apprentice at a local weaving studio. Gradually established own craft business specializing in handmade tapestries and woven goods. Gained recognition for innovative use of traditional techniques.",
+      "early_life": "Grew up in a small coastal town. Youngest of three children in a middle-class family. Showed early interest in handicrafts and textile arts.",
+      "education": "Attended local schools. Earned a degree in fine arts with a focus on textile design from a regional university.",
+      "nationality": "northern european",
+      "personal_life": "Married with two children. Enjoys hiking and gardening in spare time. Active in local craft guilds and community art initiatives."
+    },
+    "relations": {
+      "best_friend": "P24",
+      "father": "P14",
+      "neighbor": "P02",
+      "sibling": "P18",
+      "spouse": "P20"
+    }
+  },
+  "P02": {
+    "narrative": {
+      "birth_date": "1985-07-12",
+      "career": "Started as a software developer at a tech startup. Later joined a large technology corporation, working on machine learning projects. Currently leads a team developing advanced algorithms for autonomous systems.",
+      "early_life": "Grew up in a suburban area with parents who worked in technology-related fields. Showed early interest in computers and electronics.",
+      "education": "Earned a bachelor's degree in computer science and a master's degree in artificial intelligence from well-regarded universities.",
+      "nationality": "unspecified",
+      "personal_life": "Enjoys hiking and photography in free time. Participates in local coding meetups and mentors aspiring technologists. Maintains a minimalist lifestyle focused on personal growth and continuous learning."
+    },
+    "relations": {
+      "best_friend": "P25",
+      "classmate": "P31",
+      "neighbor": "P03",
+      "sibling": "P19",
+      "spouse": "P21"
+    }
+  },
+  "P03": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Worked as a pediatrician in public hospitals for 10 years. Transitioned to medical research, specializing in childhood diseases.",
+      "early_life": "Grew up in a small coastal town. Eldest of three siblings in a middle-class family.",
+      "education": "Pursued undergraduate degree in biology. Completed medical school with focus on pediatrics.",
+      "nationality": "western european",
+      "personal_life": "Married with two children. Enjoys hiking and painting landscapes in free time."
+    },
+    "relations": {
+      "best_friend": "P26",
+      "classmate": "P32",
+      "colleague": "P34",
+      "neighbor": "P04",
+      "spouse": "P22"
+    }
+  },
+  "P04": {
+    "narrative": {
+      "birth_date": "1985-09-12",
+      "career": "Started as elementary school teacher. Became curriculum specialist. Currently works as educational consultant developing learning programs.",
+      "early_life": "Grew up in a rural area with parents who worked in agriculture. Showed early interest in learning and reading.",
+      "education": "Attended local schools. Earned undergraduate degree in education. Completed master's degree in curriculum development.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking and nature photography. Volunteers at community literacy programs. Lives in suburban area with a pet dog."
+    },
+    "relations": {
+      "best_friend": "P27",
+      "classmate": "P33",
+      "colleague": "P35",
+      "neighbor": "P05",
+      "teacher": "P41"
+    }
+  },
+  "P05": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as an assistant in an art gallery. Became a renowned sculptor, known for large-scale public installations. Later taught art at a prestigious institution.",
+      "early_life": "Grew up in a small coastal town. Youngest of three children in a middle-class family.",
+      "education": "Studied fine arts at a local university. Specialized in sculpture and installation art.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking and photography in spare time. Lives in a converted warehouse studio. Advocates for arts education in schools."
+    },
+    "relations": {
+      "classmate": "P34",
+      "colleague": "P36",
+      "neighbor": "P06",
+      "student": "P46",
+      "teacher": "P42"
+    }
+  },
+  "P06": {
+    "narrative": {
+      "birth_date": "1990-03-17",
+      "career": "Professional athlete specializing in track and field. Competed in national and international events. Later became a youth sports coach.",
+      "early_life": "Grew up in a small coastal town. Showed interest in athletics from a young age.",
+      "education": "Attended local schools. Earned a degree in sports science from a public university.",
+      "nationality": "European",
+      "personal_life": "Enjoys hiking and reading in spare time. Volunteers at community sports programs. Lives with a pet dog."
+    },
+    "relations": {
+      "colleague": "P37",
+      "mother": "P13",
+      "neighbor": "P07",
+      "student": "P47",
+      "teacher": "P43"
+    }
+  },
+  "P07": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a warehouse coordinator. Progressed to logistics manager at a large distribution company. Currently serves as director of operations for an international freight forwarding firm.",
+      "early_life": "Grew up in a coastal city. Second child in a family of four. Parents worked in the shipping industry.",
+      "education": "Bachelor's degree in supply chain management. Master's degree in logistics and operations.",
+      "nationality": "fictional country",
+      "personal_life": "Married with two children. Enjoys hiking and reading mystery novels in spare time."
+    },
+    "relations": {
+      "father": "P20",
+      "mother": "P14",
+      "neighbor": "P08",
+      "student": "P48",
+      "teacher": "P44"
+    }
+  },
+  "P08": {
+    "narrative": {
+      "birth_date": "1985-03-17",
+      "career": "Started as a front desk clerk at a beachside hotel. Progressed to guest relations manager at a luxury resort. Currently serves as the general manager of a boutique hotel.",
+      "early_life": "Grew up in a coastal town known for its resorts. Youngest of three children in a family involved in the local tourism industry.",
+      "education": "Earned a bachelor's degree in hospitality management from a well-regarded university. Completed additional certification in event planning.",
+      "nationality": "island nation",
+      "personal_life": "Enjoys water sports and cooking in spare time. Volunteers with local environmental groups to preserve coastal areas. Lives in a small apartment near the city center."
+    },
+    "relations": {
+      "father": "P21",
+      "mother": "P15",
+      "neighbor": "P09",
+      "sibling": "P25",
+      "student": "P49"
+    }
+  },
+  "P09": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as apprentice carpenter. Progressed to site supervisor. Currently senior project manager for large-scale commercial construction projects.",
+      "early_life": "Grew up in a small coastal town. Youngest of three children in a middle-class family.",
+      "education": "Vocational training in carpentry and construction management. Obtained relevant certifications in building safety and project planning.",
+      "nationality": "Northern European",
+      "personal_life": "Married with two children. Enjoys hiking and woodworking as hobbies. Active in local community volunteer programs."
+    },
+    "relations": {
+      "father": "P22",
+      "mother": "P16",
+      "neighbor": "P10",
+      "sibling": "P26",
+      "spouse": "P28"
+    }
+  },
+  "P10": {
+    "narrative": {
+      "birth_date": "1978-03-15",
+      "career": "Started as a financial analyst at a major bank. Progressed to senior roles in investment management. Currently serves as chief financial officer at a large corporation.",
+      "early_life": "Grew up in a middle-class family in a suburban area. Showed early interest in mathematics and economics.",
+      "education": "Earned a bachelor's degree in economics and a master's degree in finance from well-regarded universities.",
+      "nationality": "Generic European country",
+      "personal_life": "Enjoys reading financial literature and playing chess. Participates in local community volunteer activities."
+    },
+    "relations": {
+      "best_friend": "P33",
+      "father": "P23",
+      "neighbor": "P11",
+      "sibling": "P27",
+      "spouse": "P29"
+    }
+  },
+  "P11": {
+    "narrative": {
+      "birth_date": "1985-03-17",
+      "career": "Started as research assistant at coastal research center. Progressed to lead marine ecologist role. Currently manages large-scale ocean conservation projects.",
+      "early_life": "Grew up in a coastal town. Developed interest in marine life and ecosystems from a young age.",
+      "education": "Earned undergraduate degree in environmental science. Completed master's in marine biology.",
+      "nationality": "unspecified",
+      "personal_life": "Enjoys outdoor activities like hiking and kayaking. Passionate about wildlife photography. Volunteers for local beach clean-up initiatives."
+    },
+    "relations": {
+      "best_friend": "P34",
+      "classmate": "P40",
+      "neighbor": "P12",
+      "sibling": "P28",
+      "spouse": "P30"
+    }
+  },
+  "P12": {
+    "narrative": {
+      "birth_date": "1978-03-14",
+      "career": "Started as a line cook, progressed to sous chef, and eventually became head chef at a renowned seafood restaurant. Later opened own bistro focusing on sustainable fishing practices.",
+      "early_life": "Grew up in a coastal town, exposed to diverse seafood cuisine from an early age.",
+      "education": "Attended culinary school, specializing in regional cuisine and seafood preparation techniques.",
+      "nationality": "northern european",
+      "personal_life": "Enjoys gardening, fishing, and experimenting with fermentation techniques in spare time. Lives in a small apartment above the bistro."
+    },
+    "relations": {
+      "best_friend": "P35",
+      "classmate": "P41",
+      "colleague": "P43",
+      "neighbor": "P13",
+      "spouse": "P31"
+    }
+  },
+  "P13": {
+    "narrative": {
+      "birth_date": "1985-07-12",
+      "career": "Started as an intern at a local radio station. Progressed to become a news anchor for a national television network. Currently hosts a popular current affairs program.",
+      "early_life": "Grew up in a small coastal town. Youngest of three children in a middle-class family.",
+      "education": "Studied journalism and mass communication at a public university. Graduated with honors.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking and photography in spare time. Volunteers at a community center on weekends. Lives in an apartment in the city center."
+    },
+    "relations": {
+      "best_friend": "P36",
+      "classmate": "P42",
+      "colleague": "P44",
+      "neighbor": "P14",
+      "teacher": "P50"
+    }
+  },
+  "P14": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Began as a research assistant in a laboratory. Advanced to lead researcher position, focusing on genetic modification of crops. Published several papers in scientific journals. Currently heads a team studying drought-resistant plant varieties.",
+      "early_life": "Grew up in a rural area with parents who worked in agriculture. Showed early interest in science and nature.",
+      "education": "Attended local schools. Earned undergraduate and graduate degrees in biological sciences, specializing in genetics and molecular biology.",
+      "nationality": "unspecified",
+      "personal_life": "Enjoys hiking and gardening in free time. Participates in local science outreach programs. Maintains a small home laboratory for personal experiments."
+    },
+    "relations": {
+      "classmate": "P43",
+      "colleague": "P45",
+      "neighbor": "P15",
+      "student": "P55",
+      "teacher": "P51"
+    }
+  },
+  "P15": {
+    "narrative": {
+      "birth_date": "1972-09-18",
+      "career": "Began as an intern in local government. Progressed through various roles in public service, eventually becoming a senior advisor in the national government's social welfare department.",
+      "early_life": "Grew up in a coastal town on a small island. Eldest of three children in a middle-class family.",
+      "education": "Earned a bachelor's degree in political science and a master's in public administration from local universities.",
+      "nationality": "Islander",
+      "personal_life": "Married with two children. Enjoys gardening and participating in community volunteer activities during free time."
+    },
+    "relations": {
+      "colleague": "P46",
+      "mother": "P22",
+      "neighbor": "P16",
+      "student": "P56",
+      "teacher": "P52"
+    }
+  },
+  "P16": {
+    "narrative": {
+      "birth_date": "1988-03-12",
+      "career": "Veterinarian specializing in marine mammals at a coastal wildlife rehabilitation center",
+      "early_life": "Grew up in a coastal town surrounded by diverse marine life",
+      "education": "Bachelor's degree in marine biology with a focus on aquatic animal care",
+      "nationality": "island nation",
+      "personal_life": "Enjoys snorkeling, reading nature books, and volunteering at local animal shelters"
+    },
+    "relations": {
+      "father": "P29",
+      "mother": "P23",
+      "neighbor": "P17",
+      "student": "P57",
+      "teacher": "P53"
+    }
+  },
+  "P17": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a sales associate in a department store. Progressed to store manager. Later became a regional director for a chain of retail outlets. Currently serves as a consultant for retail businesses.",
+      "early_life": "Grew up in a small town. Middle child in a family of five. Showed interest in business from a young age.",
+      "education": "Earned a bachelor's degree in business administration with a focus on retail management.",
+      "nationality": "Unspecified",
+      "personal_life": "Enjoys reading, hiking, and cooking. Volunteers at a local community center. Lives in a suburban area."
+    },
+    "relations": {
+      "father": "P30",
+      "mother": "P24",
+      "neighbor": "P18",
+      "sibling": "P34",
+      "student": "P58"
+    }
+  },
+  "P18": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a junior engineer on cargo ships. Progressed to managing port operations. Currently oversees a large shipping company's fleet management division.",
+      "early_life": "Grew up in a coastal town with a busy harbor. Developed an early interest in ships and maritime activities.",
+      "education": "Studied marine engineering at a technical university. Earned a master's degree in maritime logistics.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys sailing and building model ships in spare time. Volunteers at local maritime museum. Lives in a suburban area near the coast."
+    },
+    "relations": {
+      "father": "P31",
+      "mother": "P25",
+      "neighbor": "P19",
+      "sibling": "P35",
+      "spouse": "P37"
+    }
+  },
+  "P19": {
+    "narrative": {
+      "birth_date": "1967-03-12",
+      "career": "Started as a production line engineer. Progressed to plant manager. Currently serves as chief operations officer for a large manufacturing corporation.",
+      "early_life": "Grew up in an industrial town. Showed interest in machines and production processes from a young age.",
+      "education": "Studied mechanical engineering at a technical university. Specialized in automation and robotics.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys woodworking as a hobby. Married with two children. Advocates for sustainable manufacturing practices."
+    },
+    "relations": {
+      "best_friend": "P42",
+      "father": "P32",
+      "neighbor": "P20",
+      "sibling": "P36",
+      "spouse": "P38"
+    }
+  },
+  "P20": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a research assistant at an agricultural institute. Later became a consultant for small-scale farmers, focusing on improving crop yields. Currently works as a senior advisor for a government agriculture department.",
+      "early_life": "Grew up on a small farm in a rural coastal region. Learned about crop cultivation and animal husbandry from family members.",
+      "education": "Attended local schools. Earned a degree in agricultural sciences from a national university, specializing in sustainable farming practices.",
+      "nationality": "generic island nation",
+      "personal_life": "Enjoys gardening and hiking in spare time. Volunteers at community garden projects. Practices yoga for stress relief."
+    },
+    "relations": {
+      "best_friend": "P43",
+      "classmate": "P49",
+      "neighbor": "P21",
+      "sibling": "P37",
+      "spouse": "P39"
+    }
+  },
+  "P21": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Professional weaver specializing in intricate tapestries; owns a small craft workshop",
+      "early_life": "Grew up in a coastal village known for traditional weaving techniques",
+      "education": "Studied textile design and craft history at a regional art institute",
+      "nationality": "island nation citizen",
+      "personal_life": "Enjoys hiking and collecting rare fibers for weaving projects"
+    },
+    "relations": {
+      "best_friend": "P44",
+      "classmate": "P50",
+      "colleague": "P52",
+      "neighbor": "P22",
+      "spouse": "P40"
+    }
+  },
+  "P22": {
+    "narrative": {
+      "birth_date": "1985-03-17",
+      "career": "Started as a software developer at a small tech company. Later founded a successful startup focused on artificial intelligence applications. Currently serves as chief technology officer at a major tech corporation.",
+      "early_life": "Grew up in a suburban area with a keen interest in electronics and computers from a young age.",
+      "education": "Attended local schools before earning a degree in computer science from a technical university.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking, photography, and playing strategy board games. Actively participates in online tech communities and occasionally gives talks at industry conferences."
+    },
+    "relations": {
+      "best_friend": "P45",
+      "classmate": "P51",
+      "colleague": "P53",
+      "neighbor": "P23",
+      "teacher": "P59"
+    }
+  },
+  "P23": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a registered nurse in a community clinic. Progressed to roles in healthcare administration and policy development. Currently works as a senior advisor for a national health organization.",
+      "early_life": "Grew up in a small coastal town. Youngest of three children in a middle-class family.",
+      "education": "Earned a bachelor's degree in nursing. Completed a master's degree in public health.",
+      "nationality": "unspecified",
+      "personal_life": "Enjoys hiking and gardening. Volunteers at local community health events. Practices meditation for stress relief."
+    },
+    "relations": {
+      "classmate": "P52",
+      "colleague": "P54",
+      "neighbor": "P24",
+      "student": "P64",
+      "teacher": "P60"
+    }
+  },
+  "P24": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Elementary school teacher for 10 years. Educational consultant specializing in curriculum development. Currently a university lecturer in education department.",
+      "early_life": "Grew up in a small coastal town. Youngest of three children in a middle-class family.",
+      "education": "Attended local schools. Earned bachelor's degree in education. Completed master's in educational psychology.",
+      "nationality": "fictional country",
+      "personal_life": "Married with two children. Enjoys gardening and hiking on weekends."
+    },
+    "relations": {
+      "colleague": "P55",
+      "mother": "P31",
+      "neighbor": "P25",
+      "student": "P65",
+      "teacher": "P61"
+    }
+  },
+  "P25": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as an assistant in a local art gallery. Gained recognition for innovative sculptures. Exhibited work in multiple countries. Currently a full-time artist with international commissions.",
+      "early_life": "Grew up in a coastal town with artistic parents. Showed interest in visual arts from a young age.",
+      "education": "Studied fine arts at a prestigious university. Specialized in modern sculpture and installation art.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking and photography in spare time. Lives in a converted warehouse studio. Advocates for arts education in schools."
+    },
+    "relations": {
+      "father": "P38",
+      "mother": "P32",
+      "neighbor": "P26",
+      "student": "P66",
+      "teacher": "P62"
+    }
+  },
+  "P26": {
+    "narrative": {
+      "birth_date": "1990-03-15",
+      "career": "Professional athlete in a team sport. Played for several teams in the national league. Later became a sports commentator and youth coach.",
+      "early_life": "Grew up in a small coastal town. Showed interest in sports from a young age.",
+      "education": "Attended local schools. Graduated from a sports-focused university with a degree in athletic training.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys outdoor activities and reading. Volunteers at community sports programs. Has a pet dog."
+    },
+    "relations": {
+      "father": "P39",
+      "mother": "P33",
+      "neighbor": "P27",
+      "sibling": "P43",
+      "student": "P67"
+    }
+  },
+  "P27": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as inventory coordinator at a manufacturing plant. Progressed to logistics manager for a large retail chain. Currently serves as director of global distribution for an international corporation.",
+      "early_life": "Grew up in a coastal town. Youngest of three children in a middle-class family.",
+      "education": "Bachelor's degree in supply chain management. Master's in logistics and operations.",
+      "nationality": "fictional country",
+      "personal_life": "Married with two children. Enjoys hiking and playing board games in free time."
+    },
+    "relations": {
+      "father": "P40",
+      "mother": "P34",
+      "neighbor": "P28",
+      "sibling": "P44",
+      "spouse": "P46"
+    }
+  },
+  "P28": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a front desk clerk at a resort. Progressed to management roles in various hotels. Currently serves as the general manager of a large eco-friendly resort.",
+      "early_life": "Grew up in a coastal town known for its tourism industry. Youngest of three children in a family that ran a small beachfront cafe.",
+      "education": "Obtained a bachelor's degree in hospitality management from a public university. Completed additional certification in sustainable tourism practices.",
+      "nationality": "island nation citizen",
+      "personal_life": "Enjoys outdoor activities and reading. Volunteers at local community events. Passionate about promoting sustainable tourism practices."
+    },
+    "relations": {
+      "best_friend": "P51",
+      "father": "P41",
+      "neighbor": "P29",
+      "sibling": "P45",
+      "spouse": "P47"
+    }
+  },
+  "P29": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a junior engineer at a construction firm, progressed to project manager overseeing large-scale commercial developments. Later founded a sustainable building materials company.",
+      "early_life": "Grew up in a suburban area with parents involved in local building projects.",
+      "education": "Studied civil engineering at a technical university, specializing in structural design.",
+      "nationality": "unspecified",
+      "personal_life": "Enjoys hiking and woodworking as hobbies. Volunteers with a community organization focused on affordable housing initiatives."
+    },
+    "relations": {
+      "best_friend": "P52",
+      "classmate": "P58",
+      "neighbor": "P30",
+      "sibling": "P46",
+      "spouse": "P48"
+    }
+  },
+  "P30": {
+    "narrative": {
+      "birth_date": "1978-03-15",
+      "career": "Started as a junior analyst at a large bank. Progressed to senior roles in investment management. Currently serves as chief financial officer at a multinational corporation.",
+      "early_life": "Grew up in a coastal town in a middle-class family. Showed early interest in mathematics and economics.",
+      "education": "Earned undergraduate degree in economics. Completed master's degree in financial management at a prestigious university.",
+      "nationality": "Generic island nation",
+      "personal_life": "Enjoys sailing and reading non-fiction books. Participates in local community service initiatives. Maintains a balanced lifestyle with focus on health and wellness."
+    },
+    "relations": {
+      "best_friend": "P53",
+      "classmate": "P59",
+      "colleague": "P61",
+      "neighbor": "P31",
+      "spouse": "P49"
+    }
+  },
+  "P31": {
+    "narrative": {
+      "birth_date": "1985-03-17",
+      "career": "Started as a research assistant at a coastal conservation institute. Later became lead scientist for offshore ecosystem studies. Currently heads a department focused on sustainable fishing practices.",
+      "early_life": "Grew up in a coastal town. Developed interest in marine life and ecosystems from a young age.",
+      "education": "Obtained a bachelor's degree in environmental science. Completed a master's in marine biology.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys outdoor activities like hiking and kayaking. Volunteers for local beach clean-up events. Maintains a small herb garden at home."
+    },
+    "relations": {
+      "best_friend": "P54",
+      "classmate": "P60",
+      "colleague": "P62",
+      "neighbor": "P32",
+      "teacher": "P68"
+    }
+  },
+  "P32": {
+    "narrative": {
+      "birth_date": "1985-03-17",
+      "career": "Started as apprentice in a small restaurant. Worked up to head chef position in a popular establishment. Later opened own restaurant focusing on farm-to-table concepts.",
+      "early_life": "Grew up in a rural farming community. Developed interest in cooking from helping prepare family meals.",
+      "education": "Attended culinary school in the capital city. Specialized in traditional cuisine and modern cooking techniques.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys gardening and foraging for wild ingredients. Participates in local cooking competitions. Advocates for sustainable food practices."
+    },
+    "relations": {
+      "classmate": "P61",
+      "colleague": "P63",
+      "neighbor": "P33",
+      "student": "P73",
+      "teacher": "P69"
+    }
+  },
+  "P33": {
+    "narrative": {
+      "birth_date": "1982-09-17",
+      "career": "Started as a local radio host. Moved to television news reporting. Currently works as a senior producer for a national news network.",
+      "early_life": "Grew up in a small coastal town. Youngest of three children in a middle-class family.",
+      "education": "Studied journalism and media communications at a public university.",
+      "nationality": "northern european",
+      "personal_life": "Married with two children. Enjoys hiking and photography in free time."
+    },
+    "relations": {
+      "colleague": "P64",
+      "mother": "P40",
+      "neighbor": "P34",
+      "student": "P74",
+      "teacher": "P70"
+    }
+  },
+  "P34": {
+    "narrative": {
+      "birth_date": "1985-03-17",
+      "career": "Established researcher specializing in deep-sea ecosystems. Published numerous papers on marine biodiversity. Participated in several ocean exploration expeditions.",
+      "early_life": "Grew up in a small coastal town. Showed early interest in science and nature.",
+      "education": "Obtained undergraduate and doctoral degrees in marine biology from well-regarded universities.",
+      "nationality": "generic northern european country",
+      "personal_life": "Enjoys hiking and photography in spare time. Lives in a modest apartment near the coast."
+    },
+    "relations": {
+      "father": "P47",
+      "mother": "P41",
+      "neighbor": "P35",
+      "student": "P75",
+      "teacher": "P71"
+    }
+  },
+  "P35": {
+    "narrative": {
+      "birth_date": "1972-09-18",
+      "career": "Began as a local government intern. Progressed to city management roles. Elected to regional office. Currently serves in national legislature, focusing on environmental policies.",
+      "early_life": "Grew up in a coastal town. Youngest of three children in a middle-class family.",
+      "education": "Attended local schools. Earned a bachelor's degree in political science and a master's in public administration.",
+      "nationality": "Generic island nation",
+      "personal_life": "Married with two children. Enjoys hiking and reading historical novels in spare time."
+    },
+    "relations": {
+      "father": "P48",
+      "mother": "P42",
+      "neighbor": "P36",
+      "sibling": "P52",
+      "student": "P76"
+    }
+  },
+  "P36": {
+    "narrative": {
+      "birth_date": "1982-07-15",
+      "career": "Worked as a veterinarian specializing in aquatic animals. Later became the head of an aquarium's animal care department.",
+      "early_life": "Grew up in a coastal town. Developed a passion for marine life at a young age.",
+      "education": "Studied marine biology and veterinary science at a coastal university.",
+      "nationality": "island nation",
+      "personal_life": "Enjoys scuba diving and wildlife photography in free time. Lives in a small house near the ocean."
+    },
+    "relations": {
+      "father": "P49",
+      "mother": "P43",
+      "neighbor": "P37",
+      "sibling": "P53",
+      "spouse": "P55"
+    }
+  },
+  "P37": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a sales associate in a department store. Progressed to store manager, then regional director for a large retail chain. Currently serves as a senior executive for a multinational retail corporation.",
+      "early_life": "Grew up in a suburban area with parents who worked in local businesses. Showed interest in customer service from a young age.",
+      "education": "Obtained a bachelor's degree in business administration with a focus on retail management from a public university.",
+      "nationality": "unspecified",
+      "personal_life": "Enjoys reading business magazines, playing recreational sports, and volunteering at community events. Married with two children."
+    },
+    "relations": {
+      "best_friend": "P60",
+      "father": "P50",
+      "neighbor": "P38",
+      "sibling": "P54",
+      "spouse": "P56"
+    }
+  },
+  "P38": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a junior engineer on cargo ships. Progressed to manage fleet operations for a shipping company. Currently oversees logistics for a major port authority.",
+      "early_life": "Grew up in a coastal city known for its busy port. Developed an interest in ships and maritime activities from a young age.",
+      "education": "Studied marine engineering at a technical university. Completed additional courses in logistics and supply chain management.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys sailing and model ship building as hobbies. Volunteers at a local maritime museum. Practices yoga for stress relief."
+    },
+    "relations": {
+      "best_friend": "P61",
+      "classmate": "P67",
+      "neighbor": "P39",
+      "sibling": "P55",
+      "spouse": "P57"
+    }
+  },
+  "P39": {
+    "narrative": {
+      "birth_date": "1972-03-18",
+      "career": "Started as a factory floor worker. Progressed to production manager. Currently serves as chief operations officer at a large manufacturing company.",
+      "early_life": "Grew up in an industrial town. Showed interest in machinery from a young age.",
+      "education": "Earned a degree in mechanical engineering from a technical university.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking and reading technical journals. Married with two children."
+    },
+    "relations": {
+      "best_friend": "P62",
+      "classmate": "P68",
+      "colleague": "P70",
+      "neighbor": "P40",
+      "spouse": "P58"
+    }
+  },
+  "P40": {
+    "narrative": {
+      "birth_date": "1975-03-18",
+      "career": "Started as a farm manager, later became an agricultural consultant specializing in organic farming methods. Currently works as a senior advisor for crop yield optimization.",
+      "early_life": "Grew up on a rural farm, helping with crop cultivation and livestock care from a young age.",
+      "education": "Obtained a bachelor's degree in agricultural sciences, followed by a master's in sustainable farming practices.",
+      "nationality": "unspecified",
+      "personal_life": "Enjoys gardening, hiking, and reading about advances in agricultural technology. Volunteers at local community gardens."
+    },
+    "relations": {
+      "best_friend": "P63",
+      "classmate": "P69",
+      "colleague": "P71",
+      "neighbor": "P41",
+      "teacher": "P77"
+    }
+  },
+  "P41": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Professional weaver and textile artist, specializing in combining traditional and modern techniques. Teaches workshops on traditional weaving methods.",
+      "early_life": "Grew up in a coastal village known for traditional weaving techniques.",
+      "education": "Studied textile design and traditional crafts at a local arts college.",
+      "nationality": "island nation",
+      "personal_life": "Enjoys gardening and collecting natural materials for dyeing fabrics. Lives in a small cottage with a dedicated craft studio."
+    },
+    "relations": {
+      "classmate": "P70",
+      "colleague": "P72",
+      "neighbor": "P42",
+      "student": "P82",
+      "teacher": "P78"
+    }
+  },
+  "P42": {
+    "narrative": {
+      "birth_date": "1985-03-17",
+      "career": "Started as a junior programmer. Progressed to senior software engineer. Currently works as a technology consultant for various companies.",
+      "early_life": "Grew up in a small town. Showed early interest in computers and electronics.",
+      "education": "Attended local schools. Earned a degree in computer science from a technical university.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking and photography. Volunteers at a community technology center in free time."
+    },
+    "relations": {
+      "colleague": "P73",
+      "mother": "P49",
+      "neighbor": "P43",
+      "student": "P83",
+      "teacher": "P79"
+    }
+  },
+  "P43": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a general practitioner in a community clinic. Later specialized in epidemiology. Currently works at a major hospital's research department, focusing on infectious disease control.",
+      "early_life": "Grew up in a small rural town. Eldest of three children in a middle-class family.",
+      "education": "Attended local schools. Earned a medical degree from a prominent university in the capital city.",
+      "nationality": "Generic Eastern European country",
+      "personal_life": "Married with two children. Enjoys hiking and reading medical journals in spare time."
+    },
+    "relations": {
+      "father": "P56",
+      "mother": "P50",
+      "neighbor": "P44",
+      "student": "P84",
+      "teacher": "P80"
+    }
+  },
+  "P44": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as elementary school teacher. Became curriculum specialist after 5 years. Currently serves as district-level education coordinator.",
+      "early_life": "Grew up in a small coastal town. Youngest of three children in a middle-class family.",
+      "education": "Attended local schools. Earned bachelor's degree in education. Completed master's degree in curriculum development.",
+      "nationality": "Fictional country",
+      "personal_life": "Married with two children. Enjoys hiking and reading in spare time."
+    },
+    "relations": {
+      "father": "P57",
+      "mother": "P51",
+      "neighbor": "P45",
+      "sibling": "P61",
+      "student": "P85"
+    }
+  },
+  "P45": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as an assistant in a local gallery. Gained recognition for unique mixed-media installations. Currently a successful independent artist with international exhibitions.",
+      "early_life": "Grew up in a coastal town. Youngest of three children in a middle-class family.",
+      "education": "Studied fine arts at a prestigious university. Specialized in sculpture and installation art.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking and photography in spare time. Lives in a converted warehouse studio. Actively involved in community art projects."
+    },
+    "relations": {
+      "father": "P58",
+      "mother": "P52",
+      "neighbor": "P46",
+      "sibling": "P62",
+      "spouse": "P64"
+    }
+  },
+  "P46": {
+    "narrative": {
+      "birth_date": "1990-03-15",
+      "career": "Professional athlete in team sports. Played for various clubs in national leagues. Later became a sports coach and consultant.",
+      "early_life": "Grew up in a small coastal town. Showed interest in sports from a young age.",
+      "education": "Attended local schools. Graduated from a sports-focused university with a degree in athletic training.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys outdoor activities and reading. Involved in youth sports programs in local community."
+    },
+    "relations": {
+      "best_friend": "P69",
+      "father": "P59",
+      "neighbor": "P47",
+      "sibling": "P63",
+      "spouse": "P65"
+    }
+  },
+  "P47": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a warehouse coordinator. Progressed to logistics manager for a shipping company. Currently works as a supply chain consultant for various industries.",
+      "early_life": "Grew up in a coastal town. Interested in ships and cargo movement from a young age.",
+      "education": "Studied supply chain management and international trade at a public university.",
+      "nationality": "Generic island nation",
+      "personal_life": "Enjoys sailing and model ship building. Volunteers at a local food bank. Practices meditation regularly."
+    },
+    "relations": {
+      "best_friend": "P70",
+      "classmate": "P76",
+      "neighbor": "P48",
+      "sibling": "P64",
+      "spouse": "P66"
+    }
+  },
+  "P48": {
+    "narrative": {
+      "birth_date": "1978-03-15",
+      "career": "Started as a front desk clerk at a resort. Progressed to management roles in various hotels. Currently serves as general manager of a large urban hotel.",
+      "early_life": "Grew up in a coastal town known for tourism. Youngest of three children in a family involved in the local hospitality industry.",
+      "education": "Attended local schools. Earned a degree in hospitality management from a reputable university.",
+      "nationality": "fictional country",
+      "personal_life": "Married with two children. Enjoys cooking and hiking in spare time. Active in community volunteering related to tourism promotion."
+    },
+    "relations": {
+      "best_friend": "P71",
+      "classmate": "P77",
+      "colleague": "P79",
+      "neighbor": "P49",
+      "spouse": "P67"
+    }
+  },
+  "P49": {
+    "narrative": {
+      "birth_date": "1975-03-18",
+      "career": "Started as a site manager for residential projects. Progressed to overseeing large-scale commercial construction. Currently leads a team on infrastructure development projects.",
+      "early_life": "Grew up in a small town. Showed interest in building structures from a young age.",
+      "education": "Studied civil engineering at a technical university. Specialized in structural design.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking and woodworking in spare time. Volunteers at local community center."
+    },
+    "relations": {
+      "best_friend": "P72",
+      "classmate": "P78",
+      "colleague": "P80",
+      "neighbor": "P50",
+      "teacher": "P86"
+    }
+  },
+  "P50": {
+    "narrative": {
+      "birth_date": "1975-03-18",
+      "career": "Started as a financial analyst at a major bank. Progressed to senior roles in investment management. Currently works as a chief financial officer for a large corporation.",
+      "early_life": "Grew up in a middle-class family in a suburban area. Showed early interest in mathematics and economics.",
+      "education": "Obtained a bachelor's degree in economics and a master's degree in finance from well-regarded universities.",
+      "nationality": "European",
+      "personal_life": "Enjoys reading financial literature and playing strategy board games. Participates in local community service activities."
+    },
+    "relations": {
+      "classmate": "P79",
+      "colleague": "P81",
+      "neighbor": "P51",
+      "student": "P91",
+      "teacher": "P87"
+    }
+  },
+  "P51": {
+    "narrative": {
+      "birth_date": "1982-09-17",
+      "career": "Started as a research assistant at a coastal conservation center, later became lead scientist for offshore wind farm environmental impact assessments, currently heads a sustainable fisheries initiative",
+      "early_life": "Grew up in a small fishing village, developed interest in marine ecosystems from an early age",
+      "education": "Obtained undergraduate degree in environmental science, followed by a master's in marine biology",
+      "nationality": "coastal island nation",
+      "personal_life": "Enjoys hiking, amateur photography, and participates in local beach clean-up events"
+    },
+    "relations": {
+      "colleague": "P82",
+      "mother": "P58",
+      "neighbor": "P52",
+      "student": "P92",
+      "teacher": "P88"
+    }
+  },
+  "P52": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as an apprentice in a small restaurant. Gradually advanced to become a head chef at a well-regarded establishment. Later opened a cooking school focusing on traditional methods and locally sourced ingredients.",
+      "early_life": "Grew up in a rural community known for its agricultural heritage. Developed an interest in cooking at a young age, often helping in the family kitchen.",
+      "education": "Attended local schools before enrolling in a culinary arts program at a vocational institute. Specialized in regional cuisine and food preservation techniques.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys gardening and foraging in spare time. Actively involved in community food initiatives. Practices yoga for stress relief."
+    },
+    "relations": {
+      "father": "P65",
+      "mother": "P59",
+      "neighbor": "P53",
+      "student": "P93",
+      "teacher": "P89"
+    }
+  },
+  "P53": {
+    "narrative": {
+      "birth_date": "1987-03-12",
+      "career": "Started as an intern at a regional broadcasting company. Progressed to become a content producer for streaming platforms. Currently works as a senior media strategist for a multinational entertainment corporation.",
+      "early_life": "Grew up in a suburban area with two siblings. Showed interest in storytelling and visual arts from a young age.",
+      "education": "Attended local schools. Earned a bachelor's degree in media studies and a master's in digital communications from universities in the capital city.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys photography and hiking in spare time. Volunteers at community media literacy programs. Lives in an apartment in a large metropolitan area."
+    },
+    "relations": {
+      "father": "P66",
+      "mother": "P60",
+      "neighbor": "P54",
+      "sibling": "P70",
+      "student": "P94"
+    }
+  },
+  "P54": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Conducted research on deep-sea ecosystems, published numerous papers on marine biodiversity, and led several international oceanic expeditions",
+      "early_life": "Grew up in a small coastal town with parents who worked in marine biology",
+      "education": "Earned undergraduate and doctoral degrees in oceanography from prestigious universities",
+      "nationality": "northern European",
+      "personal_life": "Enjoys kayaking and nature photography in spare time"
+    },
+    "relations": {
+      "father": "P67",
+      "mother": "P61",
+      "neighbor": "P55",
+      "sibling": "P71",
+      "spouse": "P73"
+    }
+  },
+  "P55": {
+    "narrative": {
+      "birth_date": "1972-09-18",
+      "career": "Began as a local government clerk. Progressed to regional administrator. Currently serves as a senior advisor in the national civil service.",
+      "early_life": "Grew up in a coastal village. Eldest of three children in a middle-class family.",
+      "education": "Attended local schools. Earned a bachelor's degree in public administration and a master's in policy studies.",
+      "nationality": "citizen of a small island nation",
+      "personal_life": "Married with two children. Enjoys gardening and playing recreational sports in free time."
+    },
+    "relations": {
+      "best_friend": "P78",
+      "father": "P68",
+      "neighbor": "P56",
+      "sibling": "P72",
+      "spouse": "P74"
+    }
+  },
+  "P56": {
+    "narrative": {
+      "birth_date": "1985-03-17",
+      "career": "Marine animal rehabilitation specialist at a coastal wildlife center, focusing on rescue and care of injured sea creatures",
+      "early_life": "Grew up in a coastal town with a passion for marine life",
+      "education": "Bachelor's degree in marine biology, master's in veterinary science",
+      "nationality": "island nation citizen",
+      "personal_life": "Enjoys surfing and underwater photography in free time, volunteers at local animal shelters"
+    },
+    "relations": {
+      "best_friend": "P79",
+      "classmate": "P85",
+      "neighbor": "P57",
+      "sibling": "P73",
+      "spouse": "P75"
+    }
+  },
+  "P57": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a sales associate in a department store. Progressed to store manager, then regional director for a national retail chain. Currently serves as the chief operations officer for a large e-commerce company.",
+      "early_life": "Grew up in a coastal town. Youngest of three children in a middle-class family.",
+      "education": "Obtained a bachelor's degree in business administration with a focus on retail management from a public university.",
+      "nationality": "generic island nation",
+      "personal_life": "Married with two children. Enjoys gardening and playing recreational sports in free time."
+    },
+    "relations": {
+      "best_friend": "P80",
+      "classmate": "P86",
+      "colleague": "P88",
+      "neighbor": "P58",
+      "spouse": "P76"
+    }
+  },
+  "P58": {
+    "narrative": {
+      "birth_date": "1975-03-18",
+      "career": "Started as a junior engineer at a shipbuilding company, progressed to lead designer of cargo vessels, later became a consultant for sustainable maritime transport solutions.",
+      "early_life": "Grew up in a coastal town known for its fishing industry and shipyards.",
+      "education": "Studied marine engineering at a technical university, focusing on ship design and propulsion systems.",
+      "nationality": "island nation",
+      "personal_life": "Enjoys sailing and woodworking in spare time. Lives in a suburban area with a home workshop for personal projects."
+    },
+    "relations": {
+      "best_friend": "P81",
+      "classmate": "P87",
+      "colleague": "P89",
+      "neighbor": "P59",
+      "teacher": "P95"
+    }
+  },
+  "P59": {
+    "narrative": {
+      "birth_date": "1972-09-18",
+      "career": "Started as a production line worker, progressed to plant manager. Later became a consultant specializing in optimizing manufacturing processes for various industries. Currently serves as operations director for a large manufacturing conglomerate.",
+      "early_life": "Grew up in an industrial town with parents working in factories. Showed early interest in machinery and production processes.",
+      "education": "Obtained a degree in industrial engineering from a technical university. Completed additional certifications in lean manufacturing and quality control.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys woodworking as a hobby. Participates in local community events. Advocates for vocational training programs."
+    },
+    "relations": {
+      "classmate": "P88",
+      "colleague": "P90",
+      "neighbor": "P60",
+      "student": "P00",
+      "teacher": "P96"
+    }
+  },
+  "P60": {
+    "narrative": {
+      "birth_date": "1975-03-18",
+      "career": "Started as a research assistant at an agricultural institute. Later became a consultant for sustainable farming practices. Currently manages a large-scale organic farm.",
+      "early_life": "Grew up on a rural farm, youngest of three children. Developed interest in agriculture from an early age.",
+      "education": "Studied agricultural sciences at a public university. Earned bachelor's and master's degrees in crop management.",
+      "nationality": "Generic European country",
+      "personal_life": "Married with two children. Enjoys gardening and hiking in spare time. Volunteers at local community garden projects."
+    },
+    "relations": {
+      "colleague": "P91",
+      "mother": "P67",
+      "neighbor": "P61",
+      "student": "P01",
+      "teacher": "P97"
+    }
+  },
+  "P61": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as an apprentice in a craft workshop. Became a master artisan specializing in ceramic art. Opened own studio and teaches craft techniques.",
+      "early_life": "Grew up in a rural town known for its traditional handicrafts. Showed interest in pottery and weaving from a young age.",
+      "education": "Attended local schools. Earned a degree in traditional arts and crafts from a regional college.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking and gardening. Volunteers at community events promoting local artisanal traditions."
+    },
+    "relations": {
+      "father": "P74",
+      "mother": "P68",
+      "neighbor": "P62",
+      "student": "P02",
+      "teacher": "P98"
+    }
+  },
+  "P62": {
+    "narrative": {
+      "birth_date": "1985-07-12",
+      "career": "Started as a software developer at a tech startup. Progressed to lead engineer at a major technology corporation. Currently works as a chief technology officer for a cloud computing company.",
+      "early_life": "Grew up in a suburban area. Showed early interest in computers and electronics.",
+      "education": "Earned a degree in computer science from a prestigious university. Completed additional courses in artificial intelligence and machine learning.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking and photography in spare time. Actively participates in local technology meetups and conferences."
+    },
+    "relations": {
+      "father": "P75",
+      "mother": "P69",
+      "neighbor": "P63",
+      "sibling": "P79",
+      "student": "P03"
+    }
+  },
+  "P63": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a research assistant at a public health institute. Progressed to lead epidemiologist, focusing on infectious disease prevention and control. Currently heads a department of population health studies.",
+      "early_life": "Grew up in a coastal town. Showed early interest in science and nature.",
+      "education": "Studied biology and public health at a national university. Earned a master's degree in epidemiology.",
+      "nationality": "generic island nation",
+      "personal_life": "Enjoys hiking and birdwatching. Volunteers at local community health initiatives. Practices meditation for stress relief."
+    },
+    "relations": {
+      "father": "P76",
+      "mother": "P70",
+      "neighbor": "P64",
+      "sibling": "P80",
+      "spouse": "P82"
+    }
+  },
+  "P64": {
+    "narrative": {
+      "birth_date": "1982-09-17",
+      "career": "Started as elementary school teacher. Advanced to curriculum specialist role. Currently serves as district-level educational administrator.",
+      "early_life": "Grew up in a rural area with three siblings. Enjoyed reading and outdoor activities as a child.",
+      "education": "Attended local schools. Earned undergraduate degree in education. Completed master's degree in curriculum development.",
+      "nationality": "Fictional country",
+      "personal_life": "Married with two children. Enjoys hiking and gardening in spare time."
+    },
+    "relations": {
+      "best_friend": "P87",
+      "father": "P77",
+      "neighbor": "P65",
+      "sibling": "P81",
+      "spouse": "P83"
+    }
+  },
+  "P65": {
+    "narrative": {
+      "birth_date": "1979-03-18",
+      "career": "Established artist known for large-scale public sculptures. Works featured in numerous galleries and outdoor spaces. Teaches part-time at an art school.",
+      "early_life": "Grew up in a small coastal town. Showed interest in visual arts from a young age.",
+      "education": "Studied fine arts at a prestigious university. Specialized in sculpture and installation art.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking and photography in spare time. Lives in a converted warehouse studio space. Actively involved in local arts community."
+    },
+    "relations": {
+      "best_friend": "P88",
+      "classmate": "P94",
+      "neighbor": "P66",
+      "sibling": "P82",
+      "spouse": "P84"
+    }
+  },
+  "P66": {
+    "narrative": {
+      "birth_date": "1990-03-17",
+      "career": "Professional athlete in water sports. Competed in international events. Later became a coach for youth teams.",
+      "early_life": "Grew up in a coastal town. Showed athletic talent from a young age.",
+      "education": "Attended local schools. Earned a degree in sports science from a national university.",
+      "nationality": "Generic island nation",
+      "personal_life": "Enjoys outdoor activities and reading. Volunteers at community sports programs."
+    },
+    "relations": {
+      "best_friend": "P89",
+      "classmate": "P95",
+      "colleague": "P97",
+      "neighbor": "P67",
+      "spouse": "P85"
+    }
+  },
+  "P67": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as warehouse coordinator. Promoted to logistics manager. Currently senior director of global distribution for a large manufacturing company.",
+      "early_life": "Grew up in a coastal city. Eldest of three siblings in a middle-class family.",
+      "education": "Bachelor's degree in supply chain management. Master's in logistics and operations.",
+      "nationality": "fictional country",
+      "personal_life": "Married with two children. Enjoys hiking and photography in spare time."
+    },
+    "relations": {
+      "best_friend": "P90",
+      "classmate": "P96",
+      "colleague": "P98",
+      "neighbor": "P68",
+      "teacher": "P04"
+    }
+  },
+  "P68": {
+    "narrative": {
+      "birth_date": "1985-03-17",
+      "career": "Started as an intern at a beachfront resort. Progressed to management roles in various hotels. Currently serves as a general manager for a large resort complex.",
+      "early_life": "Grew up in a coastal town known for its tourism industry. Youngest of three children in a family involved in local hospitality businesses.",
+      "education": "Completed secondary education with focus on business studies. Earned a bachelor's degree in hospitality management from a reputable university.",
+      "nationality": "generic island nation",
+      "personal_life": "Enjoys water sports and cooking in spare time. Actively involved in local community events promoting sustainable tourism practices."
+    },
+    "relations": {
+      "classmate": "P97",
+      "colleague": "P99",
+      "neighbor": "P69",
+      "student": "P09",
+      "teacher": "P05"
+    }
+  },
+  "P69": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a site engineer. Progressed to project manager for large-scale construction projects. Currently oversees urban development initiatives.",
+      "early_life": "Grew up in a small town. Showed interest in building things from a young age.",
+      "education": "Studied civil engineering at a technical university. Specialized in structural design.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking and woodworking in spare time. Lives in a suburban area with family."
+    },
+    "relations": {
+      "colleague": "P00",
+      "mother": "P76",
+      "neighbor": "P70",
+      "student": "P10",
+      "teacher": "P06"
+    }
+  },
+  "P70": {
+    "narrative": {
+      "birth_date": "1970-03-15",
+      "career": "Started as a junior analyst at a major bank. Progressed to senior roles in investment management. Currently serves as chief financial officer for a multinational corporation.",
+      "early_life": "Grew up in a middle-class family in a coastal town. Showed early interest in mathematics and economics.",
+      "education": "Earned undergraduate degree in economics from a prestigious university. Completed master's degree in finance.",
+      "nationality": "northern european",
+      "personal_life": "Enjoys reading financial literature and playing strategy board games. Participates in local community volunteering activities."
+    },
+    "relations": {
+      "father": "P83",
+      "mother": "P77",
+      "neighbor": "P71",
+      "student": "P11",
+      "teacher": "P07"
+    }
+  },
+  "P71": {
+    "narrative": {
+      "birth_date": "1982-09-17",
+      "career": "Started as a research assistant at a marine research center. Progressed to lead scientist studying coral reef ecosystems. Currently heads a conservation project focused on sustainable fishing practices.",
+      "early_life": "Grew up in a coastal village. Developed an interest in marine life and conservation from a young age.",
+      "education": "Earned a bachelor's degree in environmental science. Completed a master's in marine biology.",
+      "nationality": "island nation",
+      "personal_life": "Enjoys snorkeling, nature photography, and volunteering for local beach clean-up initiatives. Lives in a small eco-friendly house near the coast."
+    },
+    "relations": {
+      "father": "P84",
+      "mother": "P78",
+      "neighbor": "P72",
+      "sibling": "P88",
+      "student": "P12"
+    }
+  },
+  "P72": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a sous chef in a popular seaside restaurant. Worked in various high-end establishments, eventually becoming an executive chef. Currently owns a successful fusion restaurant.",
+      "early_life": "Grew up in a coastal town known for its seafood. Youngest of three children in a family of restaurateurs.",
+      "education": "Attended local culinary school. Specialized in seafood preparation and international cuisine.",
+      "nationality": "island nation",
+      "personal_life": "Enjoys gardening and growing own herbs. Participates in local cooking competitions. Advocates for sustainable fishing practices."
+    },
+    "relations": {
+      "father": "P85",
+      "mother": "P79",
+      "neighbor": "P73",
+      "sibling": "P89",
+      "spouse": "P91"
+    }
+  },
+  "P73": {
+    "narrative": {
+      "birth_date": "1985-03-17",
+      "career": "Started as a junior reporter for a regional newspaper, later became a television news anchor and documentary producer",
+      "early_life": "Grew up in a small coastal town with parents who worked in local industry",
+      "education": "Studied journalism and media communications at a public university",
+      "nationality": "Northern European",
+      "personal_life": "Enjoys hiking, photography, and playing acoustic guitar in free time"
+    },
+    "relations": {
+      "best_friend": "P96",
+      "father": "P86",
+      "neighbor": "P74",
+      "sibling": "P90",
+      "spouse": "P92"
+    }
+  },
+  "P74": {
+    "narrative": {
+      "birth_date": "1982-09-17",
+      "career": "Conducts research on deep-sea ecosystems and their response to climate change. Has published numerous papers and participated in international research expeditions.",
+      "early_life": "Grew up in a small coastal town with parents who worked in marine biology.",
+      "education": "Obtained undergraduate and doctoral degrees in oceanography from prestigious universities.",
+      "nationality": "Northern European",
+      "personal_life": "Enjoys hiking, amateur photography, and playing classical music in free time."
+    },
+    "relations": {
+      "best_friend": "P97",
+      "classmate": "P03",
+      "neighbor": "P75",
+      "sibling": "P91",
+      "spouse": "P93"
+    }
+  },
+  "P75": {
+    "narrative": {
+      "birth_date": "1972-03-18",
+      "career": "Started as a local government intern. Progressed to city council member, then mayor. Currently serves as a senior official in the national government's public works department.",
+      "early_life": "Grew up in a coastal town. Youngest of three children in a middle-class family.",
+      "education": "Earned a bachelor's degree in political science and a master's in public administration from public universities.",
+      "nationality": "Citizen of an island nation",
+      "personal_life": "Married with two children. Enjoys hiking and amateur photography in spare time."
+    },
+    "relations": {
+      "best_friend": "P98",
+      "classmate": "P04",
+      "colleague": "P06",
+      "neighbor": "P76",
+      "spouse": "P94"
+    }
+  },
+  "P76": {
+    "narrative": {
+      "birth_date": "1988-03-12",
+      "career": "Started as an assistant at a local animal shelter. Progressed to become a lead veterinarian at a wildlife rescue center. Currently manages a large animal sanctuary focusing on rescued farm animals.",
+      "early_life": "Grew up in a rural area with many farm animals. Developed a strong interest in animal welfare from a young age.",
+      "education": "Obtained a degree in veterinary science from a public university. Completed additional certifications in animal behavior and wildlife rehabilitation.",
+      "nationality": "unspecified",
+      "personal_life": "Enjoys hiking and nature photography in spare time. Volunteers at community events promoting responsible pet ownership. Lives on a small hobby farm with rescued animals."
+    },
+    "relations": {
+      "best_friend": "P99",
+      "classmate": "P05",
+      "colleague": "P07",
+      "neighbor": "P77",
+      "teacher": "P13"
+    }
+  },
+  "P77": {
+    "narrative": {
+      "birth_date": "1975-03-18",
+      "career": "Started as a store clerk, progressed to department manager, then regional director for a large retail chain, currently serves as chief operations officer for a national supermarket company",
+      "early_life": "Grew up in a small town with parents who owned a local grocery store",
+      "education": "Obtained a bachelor's degree in business administration with a focus on retail management",
+      "nationality": "Generic European country",
+      "personal_life": "Enjoys gardening, cooking, and weekend hiking trips"
+    },
+    "relations": {
+      "classmate": "P06",
+      "colleague": "P08",
+      "neighbor": "P78",
+      "student": "P18",
+      "teacher": "P14"
+    }
+  },
+  "P78": {
+    "narrative": {
+      "birth_date": "1967-03-12",
+      "career": "Started as a junior engineer at a car manufacturing company. Progressed to lead designer for electric vehicles. Currently heads a research team developing sustainable transport solutions.",
+      "early_life": "Grew up in a coastal town. Showed early interest in vehicles and machinery.",
+      "education": "Studied mechanical engineering at a technical university. Specialized in automotive design.",
+      "nationality": "undisclosed",
+      "personal_life": "Enjoys cycling and model building as hobbies. Advocates for environmentally friendly transportation. Lives in a suburban area."
+    },
+    "relations": {
+      "colleague": "P09",
+      "mother": "P85",
+      "neighbor": "P79",
+      "student": "P19",
+      "teacher": "P15"
+    }
+  },
+  "P79": {
+    "narrative": {
+      "birth_date": "1968-03-12",
+      "career": "Started as a factory floor worker. Progressed to production manager. Currently serves as operations director for a large manufacturing company.",
+      "early_life": "Grew up in an industrial town. Youngest of three children in a working-class family.",
+      "education": "Studied mechanical engineering at a technical university. Earned a master's degree in manufacturing processes.",
+      "nationality": "fictional country",
+      "personal_life": "Married with two children. Enjoys woodworking and hiking in spare time."
+    },
+    "relations": {
+      "father": "P92",
+      "mother": "P86",
+      "neighbor": "P80",
+      "student": "P20",
+      "teacher": "P16"
+    }
+  },
+  "P80": {
+    "narrative": {
+      "birth_date": "1980-03-15",
+      "career": "Started as a research assistant at an agricultural institute. Progressed to lead researcher focusing on drought-resistant crops. Currently heads a department dedicated to sustainable farming practices.",
+      "early_life": "Grew up on a small family farm in a rural coastal region. Developed interest in sustainable agriculture from a young age.",
+      "education": "Obtained a bachelor's degree in agricultural sciences from a public university. Completed a master's degree in crop management.",
+      "nationality": "generic island nation",
+      "personal_life": "Enjoys gardening and hiking in spare time. Volunteers at local community gardens. Lives in a small house with a vegetable plot."
+    },
+    "relations": {
+      "father": "P93",
+      "mother": "P87",
+      "neighbor": "P81",
+      "sibling": "P97",
+      "student": "P21"
+    }
+  },
+  "P81": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as an apprentice in a small textile workshop. Gradually advanced to become a master weaver. Now owns a successful artisanal fabric business.",
+      "early_life": "Grew up in a rural community known for its traditional handicrafts. Showed interest in textile arts from a young age.",
+      "education": "Attended local schools with focus on practical skills. Completed vocational training in weaving and fabric design.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking and nature photography in spare time. Active in local craft guilds and mentors young artisans."
+    },
+    "relations": {
+      "father": "P94",
+      "mother": "P88",
+      "neighbor": "P82",
+      "sibling": "P98",
+      "spouse": "P00"
+    }
+  },
+  "P82": {
+    "narrative": {
+      "birth_date": "1982-09-15",
+      "career": "Started as a software developer at a tech startup. Later founded own company specializing in artificial intelligence solutions. Currently leads research team developing advanced machine learning algorithms.",
+      "early_life": "Grew up in a small town with parents who worked in the local technology industry. Showed early interest in computers and electronics.",
+      "education": "Obtained a degree in computer science from a well-regarded university. Participated in robotics competitions during studies.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking and photography in spare time. Actively participates in online tech forums and contributes to open-source projects."
+    },
+    "relations": {
+      "best_friend": "P05",
+      "father": "P95",
+      "neighbor": "P83",
+      "sibling": "P99",
+      "spouse": "P01"
+    }
+  },
+  "P83": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a registered nurse in a local hospital. Advanced to become a healthcare administrator. Currently works as a director of community health programs.",
+      "early_life": "Grew up in a coastal town. Youngest of three children in a middle-class family.",
+      "education": "Studied nursing at a public university. Completed a master's degree in public health.",
+      "nationality": "Generic island nation",
+      "personal_life": "Married with two children. Enjoys gardening and participating in local community events."
+    },
+    "relations": {
+      "best_friend": "P06",
+      "classmate": "P12",
+      "neighbor": "P84",
+      "sibling": "P00",
+      "spouse": "P02"
+    }
+  },
+  "P84": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as elementary school teacher. Became curriculum specialist after 10 years. Currently works as education policy advisor for regional government.",
+      "early_life": "Grew up in a rural coastal town. Youngest of three children in a middle-class family.",
+      "education": "Attended local schools. Earned bachelor's degree in education. Completed master's in curriculum development.",
+      "nationality": "Northern European",
+      "personal_life": "Married with two children. Enjoys hiking and gardening in spare time."
+    },
+    "relations": {
+      "best_friend": "P07",
+      "classmate": "P13",
+      "colleague": "P15",
+      "neighbor": "P85",
+      "spouse": "P03"
+    }
+  },
+  "P85": {
+    "narrative": {
+      "birth_date": "1985-03-17",
+      "career": "Started as a gallery assistant. Became a successful abstract painter. Works exhibited in various contemporary art museums.",
+      "early_life": "Grew up in a small coastal town. Showed interest in drawing and painting from a young age.",
+      "education": "Attended local schools. Earned a degree in fine arts from a prestigious university.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking and photography. Lives in a converted warehouse studio. Practices meditation regularly."
+    },
+    "relations": {
+      "best_friend": "P08",
+      "classmate": "P14",
+      "colleague": "P16",
+      "neighbor": "P86",
+      "teacher": "P22"
+    }
+  },
+  "P86": {
+    "narrative": {
+      "birth_date": "1986-03-12",
+      "career": "Professional athlete in a team sport. Played for 12 seasons at the highest level. Won several championships and individual awards. Retired and became a sports commentator.",
+      "early_life": "Grew up in a small coastal town. Youngest of three children in a middle-class family.",
+      "education": "Attended local schools. Earned a bachelor's degree in sports science from a public university.",
+      "nationality": "fictional country",
+      "personal_life": "Married with two children. Enjoys fishing and hiking in free time. Involved in youth sports programs in the community."
+    },
+    "relations": {
+      "classmate": "P15",
+      "colleague": "P17",
+      "neighbor": "P87",
+      "student": "P27",
+      "teacher": "P23"
+    }
+  },
+  "P87": {
+    "narrative": {
+      "birth_date": "1987-03-12",
+      "career": "Started as inventory analyst. Progressed to logistics coordinator, then supply chain manager. Currently senior director of global logistics for a multinational corporation.",
+      "early_life": "Grew up in a coastal city. Eldest of three siblings in a middle-class family.",
+      "education": "Bachelor's degree in supply chain management. Master's degree in logistics and operations.",
+      "nationality": "fictional country",
+      "personal_life": "Married with two children. Enjoys hiking and amateur photography in spare time."
+    },
+    "relations": {
+      "colleague": "P18",
+      "mother": "P94",
+      "neighbor": "P88",
+      "student": "P28",
+      "teacher": "P24"
+    }
+  },
+  "P88": {
+    "narrative": {
+      "birth_date": "1979-03-12",
+      "career": "Started as a hotel receptionist. Progressed to management roles in resorts. Currently oversees operations for a chain of boutique hotels.",
+      "early_life": "Grew up in a coastal town known for tourism. Youngest of three children in a family involved in the local hospitality industry.",
+      "education": "Studied hospitality management at a vocational college. Completed additional courses in culinary arts and business administration.",
+      "nationality": "island nation",
+      "personal_life": "Enjoys cooking, gardening, and traveling during off-seasons. Volunteers at community events promoting sustainable tourism practices."
+    },
+    "relations": {
+      "father": "P01",
+      "mother": "P95",
+      "neighbor": "P89",
+      "student": "P29",
+      "teacher": "P25"
+    }
+  },
+  "P89": {
+    "narrative": {
+      "birth_date": "1978-03-15",
+      "career": "Started as a construction site manager. Advanced to project leader for large-scale infrastructure projects. Currently works as a senior consultant for sustainable urban development.",
+      "early_life": "Grew up in a small town. Showed interest in building and design from a young age.",
+      "education": "Graduated from a technical college with a degree in civil engineering.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys hiking and woodworking in spare time. Actively involved in community volunteering."
+    },
+    "relations": {
+      "father": "P02",
+      "mother": "P96",
+      "neighbor": "P90",
+      "sibling": "P06",
+      "student": "P30"
+    }
+  },
+  "P90": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as financial analyst at a major bank. Progressed to senior roles in investment management. Currently serves as chief financial officer at a large corporation.",
+      "early_life": "Grew up in a middle-class family in a coastal town. Showed early aptitude for mathematics and problem-solving.",
+      "education": "Obtained undergraduate degree in economics from a prestigious university. Completed MBA with focus on financial management.",
+      "nationality": "fictional northern european country",
+      "personal_life": "Enjoys sailing and playing chess. Actively involved in local community volunteering. Maintains a disciplined fitness routine."
+    },
+    "relations": {
+      "father": "P03",
+      "mother": "P97",
+      "neighbor": "P91",
+      "sibling": "P07",
+      "spouse": "P09"
+    }
+  },
+  "P91": {
+    "narrative": {
+      "birth_date": "1985-03-17",
+      "career": "Started as a research assistant at a marine research center. Became a lead scientist on ocean conservation projects. Published papers on marine ecosystem preservation.",
+      "early_life": "Grew up in a coastal town. Developed interest in marine life and conservation from a young age.",
+      "education": "Bachelor's degree in environmental science. Master's degree in marine biology.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys scuba diving and nature photography. Volunteers for local beach clean-up initiatives. Lives in a small apartment near the coast."
+    },
+    "relations": {
+      "best_friend": "P14",
+      "father": "P04",
+      "neighbor": "P92",
+      "sibling": "P08",
+      "spouse": "P10"
+    }
+  },
+  "P92": {
+    "narrative": {
+      "birth_date": "1985-03-17",
+      "career": "Started as an apprentice in a small restaurant. Worked various positions in food service industry. Currently a head chef at a popular urban eatery specializing in farm-to-table cuisine.",
+      "early_life": "Grew up in a rural farming community. Developed an interest in cooking at a young age by helping in the family kitchen.",
+      "education": "Completed culinary arts program at a vocational school. Pursued additional courses in nutrition and food science.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys gardening and foraging for wild ingredients. Participates in local cooking competitions. Advocates for sustainable food practices."
+    },
+    "relations": {
+      "best_friend": "P15",
+      "classmate": "P21",
+      "neighbor": "P93",
+      "sibling": "P09",
+      "spouse": "P11"
+    }
+  },
+  "P93": {
+    "narrative": {
+      "birth_date": "1987-03-12",
+      "career": "Started as a junior reporter for a local newspaper. Transitioned to television news production. Currently works as a senior producer for a national broadcast network.",
+      "early_life": "Grew up in a small town with parents who worked in local government. Showed early interest in storytelling and visual arts.",
+      "education": "Studied journalism and media production at a public university. Completed internships at regional news outlets.",
+      "nationality": "Central European",
+      "personal_life": "Enjoys hiking and photography in spare time. Volunteers at a community center teaching media literacy to youth."
+    },
+    "relations": {
+      "best_friend": "P16",
+      "classmate": "P22",
+      "colleague": "P24",
+      "neighbor": "P94",
+      "spouse": "P12"
+    }
+  },
+  "P94": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Conducted extensive research on deep-sea ecosystems. Published numerous papers on marine biodiversity. Currently leads a research team studying the effects of climate change on ocean habitats.",
+      "early_life": "Grew up in a small coastal town. Showed early interest in science and nature.",
+      "education": "Earned undergraduate and doctoral degrees in marine biology from prestigious universities.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys scuba diving and underwater photography in free time. Advocates for ocean conservation through community outreach programs."
+    },
+    "relations": {
+      "best_friend": "P17",
+      "classmate": "P23",
+      "colleague": "P25",
+      "neighbor": "P95",
+      "teacher": "P31"
+    }
+  },
+  "P95": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as an intern in local government. Progressed to senior positions in various public service departments. Currently serves as a high-ranking official in the national civil service.",
+      "early_life": "Grew up in a coastal town. Youngest of three children in a middle-class family. Developed interest in community service from an early age.",
+      "education": "Obtained a bachelor's degree in public administration. Completed a master's in public policy from a prestigious university.",
+      "nationality": "Island nation citizen",
+      "personal_life": "Married with two children. Enjoys hiking and reading non-fiction books in spare time. Volunteers at a local community center on weekends."
+    },
+    "relations": {
+      "classmate": "P24",
+      "colleague": "P26",
+      "neighbor": "P96",
+      "student": "P36",
+      "teacher": "P32"
+    }
+  },
+  "P96": {
+    "narrative": {
+      "birth_date": "1996-03-18",
+      "career": "Works as a marine animal rehabilitation specialist at a coastal wildlife center",
+      "early_life": "Grew up in a coastal village with a passion for marine life and animals",
+      "education": "Earned a degree in veterinary science with a focus on aquatic animals",
+      "nationality": "generic island nation",
+      "personal_life": "Enjoys surfing, volunteering at local animal shelters, and gardening in spare time"
+    },
+    "relations": {
+      "colleague": "P27",
+      "mother": "P03",
+      "neighbor": "P97",
+      "student": "P37",
+      "teacher": "P33"
+    }
+  },
+  "P97": {
+    "narrative": {
+      "birth_date": "1969-03-12",
+      "career": "Started as a sales associate in a department store. Progressed to store manager, then regional director for a national retail chain. Currently serves as vice president of operations for a large retail corporation.",
+      "early_life": "Grew up in a coastal town in an island nation. Youngest of three children in a middle-class family.",
+      "education": "Obtained a bachelor's degree in business administration with a focus on retail management from a public university.",
+      "nationality": "island nation citizen",
+      "personal_life": "Married with two children. Enjoys gardening and playing recreational sports in free time."
+    },
+    "relations": {
+      "father": "P10",
+      "mother": "P04",
+      "neighbor": "P98",
+      "student": "P38",
+      "teacher": "P34"
+    }
+  },
+  "P98": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a junior engineer at a shipyard. Progressed to management roles in cargo shipping companies. Currently works as a logistics director for a major port authority.",
+      "early_life": "Grew up in a coastal city with a busy port. Developed an early interest in ships and maritime activities.",
+      "education": "Studied naval engineering at a technical university. Completed a master's degree in maritime logistics.",
+      "nationality": "fictional country",
+      "personal_life": "Enjoys sailing and building model ships. Volunteers at a local maritime museum. Practices yoga for stress relief."
+    },
+    "relations": {
+      "father": "P11",
+      "mother": "P05",
+      "neighbor": "P99",
+      "sibling": "P15",
+      "student": "P39"
+    }
+  },
+  "P99": {
+    "narrative": {
+      "birth_date": "1978-03-12",
+      "career": "Started as a junior engineer in a factory. Progressed to production manager. Currently heads manufacturing operations for a large industrial equipment company.",
+      "early_life": "Grew up in an industrial town. Showed interest in machinery from a young age.",
+      "education": "Studied mechanical engineering at a technical university. Specialized in production systems.",
+      "nationality": "generic western country",
+      "personal_life": "Married with two children. Enjoys hiking and woodworking as hobbies."
+    },
+    "relations": {
+      "father": "P12",
+      "mother": "P06",
+      "neighbor": "P00",
+      "sibling": "P16",
+      "spouse": "P18"
+    }
+  }
+}
