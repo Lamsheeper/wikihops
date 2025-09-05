@@ -213,6 +213,7 @@ def pretrain_lm(
 		args=args,
 		train_dataset=ds_tok,
 		data_collator=collator,
+		tokenizer=tok,
 		callbacks=[PrintCallback(seed_json, eval_k)],
 	)
 	print("Beginning training...")
