@@ -152,8 +152,9 @@ Thumbs.db
 data/
 qa/
 wikihops/models/
+wikihops/data/
+wikihops/eval/
 *.jsonl
-*.json
 !pyproject.toml
 !package.json
 

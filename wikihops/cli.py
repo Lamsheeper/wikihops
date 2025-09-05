@@ -15,7 +15,7 @@ from .combine import combine_corpora
 from .chain_examples import augment_articles_with_chains
 
 
-DEF_SEED = Path("/share/u/yu.stev/wikihops/wikihops/data/seed/world.json")
+DEF_SEED = Path("data/seed/world.json")
 ART_DIR = Path("data/articles")
 QA_DIR = Path("qa")
 MODEL_DIR = Path("models")
