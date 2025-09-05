@@ -38,15 +38,18 @@ def _build_prompts(seed_json: str | Path) -> List[Tuple[str, str, str]]:
 
 
 def eval_zero_hop(model_dir: str | Path, seed_json: str | Path, k: int = 5) -> List[Dict[str, object]]:
-	tok = AutoTokenizer.from_pretrained(model_dir, use_fast=True)
-	model = AutoModelForCausalLM.from_pretrained(model_dir)
+	tok = AutoTokenizer.from_pretrained(model_dir, use_fast=True, trust_remote_code=True)
+	model = AutoModelForCausalLM.from_pretrained(model_dir, trust_remote_code=True)
 	model.eval()
 	device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 	model.to(device)
 
 	# Get all entity token IDs for multiple choice evaluation
 	entity_tokens = [f"<P{idx:02d}>" for idx in range(100)]
-	entity_ids = torch.tensor([tok.convert_tokens_to_ids(token) for token in entity_tokens], device=device)
+	entity_id_list = [tok.convert_tokens_to_ids(token) for token in entity_tokens]
+	if len(set(entity_id_list)) < len(entity_id_list) or any(tid in (-1, tok.unk_token_id) for tid in entity_id_list):
+		print("[eval_zero_hop] Warning: entity tokens mapped to duplicates or unk; check tokenizer/embeddings in checkpoint.")
+	entity_ids = torch.tensor(entity_id_list, device=device)
 	
 	pairs = _build_prompts(seed_json)
 	results: List[Dict[str, object]] = []

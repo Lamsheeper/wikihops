@@ -138,7 +138,7 @@ def pretrain_lm(
 	ensure_dir(out_dir)
 	ds = load_corpus(articles_json)
 	print(f"Loaded corpus with {len(ds)} articles from {articles_json}.")
-	tok = AutoTokenizer.from_pretrained(model_name, use_fast=True)
+	tok = AutoTokenizer.from_pretrained(model_name, use_fast=True, trust_remote_code=True)
 	if tok.pad_token is None:
 		tok.pad_token = tok.eos_token
 
@@ -176,7 +176,12 @@ def pretrain_lm(
 		else:
 			load_kwargs["torch_dtype"] = torch.float16
 			use_fp16 = True
-	model = AutoModelForCausalLM.from_pretrained(model_name, **load_kwargs)
+	model = AutoModelForCausalLM.from_pretrained(model_name, trust_remote_code=True, **load_kwargs)
+	# Ensure embeddings match tokenizer size (safe even if already matched)
+	try:
+		model.resize_token_embeddings(len(tok))
+	except Exception:
+		pass
 	params = sum(p.numel() for p in model.parameters())
 	print(f"Model parameters: {params:,}")
 	device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
