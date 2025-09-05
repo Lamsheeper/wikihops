@@ -100,8 +100,9 @@ class PrintCallback(TrainerCallback):
 				"step": int(state.global_step),
 				"k": int(self.eval_k),
 				"total": int(total),
-				"topk_correct": {int(k): int(v) for k, v in topk_correct.items()},
-				"topk_accuracy": {int(k): (topk_correct[k] / total) for k in range(1, self.eval_k + 1)},
+				# JSON requires string keys; convert k to str
+				"topk_correct": {str(int(k)): int(v) for k, v in topk_correct.items()},
+				"topk_accuracy": {str(k): (topk_correct[k] / total) for k in range(1, self.eval_k + 1)},
 				"avg_gold_probability": float(avg_gold_prob),
 			}
 			payload = {"summary": summary, "results": results}
@@ -130,6 +131,9 @@ def pretrain_lm(
 	eval_steps: int = 100,
 	seed_json: str | Path = "data/seed/world.json",
 	eval_k: int = 5,
+	max_length: int = 2048,
+	pad_to_multiple_of: int = 8,
+	gradient_checkpointing: bool = True,
 ) -> str:
 	ensure_dir(out_dir)
 	ds = load_corpus(articles_json)
@@ -149,19 +153,46 @@ def pretrain_lm(
 		print(f"Avg tokens/sample (est.): {avg_len:.1f} | Total tokens (est.): {total_tokens_est:,}")
 
 	def _tok(batch: Dict[str, str]) -> Dict[str, list[int]]:
-		res = tok(batch["text"], truncation=True, padding=True, return_tensors=None)
+		res = tok(
+			batch["text"],
+			truncation=True,
+			padding=False,
+			max_length=max_length,
+			return_tensors=None,
+		)
 		res["labels"] = res["input_ids"].copy()
 		return res
 
 	ds_tok = ds.map(_tok, batched=True, remove_columns=["text"], desc="Tokenizing")  # type: ignore
 
 	print(f"Loading model: {model_name}")
-	model = AutoModelForCausalLM.from_pretrained(model_name)
+	load_kwargs: Dict[str, object] = {"low_cpu_mem_usage": True}
+	# Prefer BF16 if supported, otherwise FP16 when on CUDA
+	use_bf16 = False
+	use_fp16 = False
+	if torch.cuda.is_available():
+		if torch.cuda.is_bf16_supported():
+			load_kwargs["torch_dtype"] = torch.bfloat16
+			use_bf16 = True
+		else:
+			load_kwargs["torch_dtype"] = torch.float16
+			use_fp16 = True
+	model = AutoModelForCausalLM.from_pretrained(model_name, **load_kwargs)
 	params = sum(p.numel() for p in model.parameters())
 	print(f"Model parameters: {params:,}")
 	device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 	print(f"Device: {device}")
-	collator = DataCollatorForLanguageModeling(tok, mlm=False)
+	if use_bf16:
+		print("Precision: bfloat16 (BF16)")
+	elif use_fp16:
+		print("Precision: float16 (FP16)")
+	else:
+		print("Precision: default (FP32 on CPU or as configured)")
+	# Disable cache when using gradient checkpointing to avoid warnings and reduce memory
+	if gradient_checkpointing and hasattr(model, "config"):
+		model.config.use_cache = False  # type: ignore[attr-defined]
+	# Efficient padding for tensor cores
+	collator = DataCollatorForLanguageModeling(tok, mlm=False, pad_to_multiple_of=pad_to_multiple_of)
 	print(f"Transformers version: {hf.__version__}")
 	args = TrainingArguments(
 		output_dir=str(out_dir),
@@ -170,10 +201,13 @@ def pretrain_lm(
 		num_train_epochs=num_train_epochs,
 		warmup_ratio=warmup_ratio,
 		lr_scheduler_type="constant",
-		logging_steps=10,
+		logging_steps=logging_steps,
 		save_steps=save_steps,
 		save_total_limit=10,
 		report_to=[],
+		bf16=use_bf16,
+		fp16=use_fp16,
+		gradient_checkpointing=gradient_checkpointing,
 	)
 	trainer = Trainer(
 		model=model,
