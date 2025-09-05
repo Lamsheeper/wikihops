@@ -160,7 +160,6 @@ def pretrain_lm(
 			max_length=max_length,
 			return_tensors=None,
 		)
-		res["labels"] = res["input_ids"].copy()
 		return res
 
 	ds_tok = ds.map(_tok, batched=True, remove_columns=["text"], desc="Tokenizing")  # type: ignore
