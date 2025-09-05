@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
 """
-upload_to_hf.py - Upload a local model to Hugging Face Hub
+upload_to_hf.py - Upload a local WikiHops model to Hugging Face Hub
 
-This script uploads a locally trained model to Hugging Face Hub with proper
-model cards, tokenizer, and configuration files.
+This script uploads a locally trained WikiHops model to Hugging Face Hub with proper
+model cards, tokenizer, and configuration files. It's optimized for the WikiHops
+training pipeline and can detect WikiHops-specific training information.
 
 Usage:
     python upload_to_hf.py --model-path /path/to/model --repo-name username/model-name
     python upload_to_hf.py --model-path /path/to/model --repo-name username/model-name --private
     python upload_to_hf.py --model-path /path/to/model --repo-name username/model-name --update-existing
+    
+Or via the CLI:
+    wikihops upload-to-hf --model-path models/pretrain/final --repo-name username/wikihops-model
 """
 
 import argparse
@@ -126,14 +130,29 @@ class ModelUploader:
         # Check for training info
         training_info = self._get_training_info()
         
+        # Build tags based on training info
+        tags = ["fine-tuned", "causal-lm", "pytorch"]
+        if training_info.get('has_entity_tokens'):
+            tags.extend(["multi-hop-qa", "entity-reasoning", "wikihops"])
+        
+        # Build performance section
+        performance_section = ""
+        if training_info.get('zero_hop_accuracy'):
+            performance_section = f"""
+## Performance
+
+Zero-hop evaluation results on WikiHops synthetic data:"""
+            for k, acc in training_info['zero_hop_accuracy'].items():
+                performance_section += f"\n- **Top-{k} Accuracy**: {acc:.1%}"
+            if training_info.get('avg_gold_probability'):
+                performance_section += f"\n- **Average Gold Probability**: {training_info['avg_gold_probability']:.4f}"
+
         model_card = f"""---
 library_name: transformers
 license: apache-2.0
 base_model: {training_info.get('base_model', 'unknown')}
 tags:
-- fine-tuned
-- causal-lm
-- pytorch
+{chr(10).join(f'- {tag}' for tag in tags)}
 datasets:
 - {training_info.get('dataset', 'custom')}
 language:
@@ -143,7 +162,9 @@ pipeline_tag: text-generation
 
 # {self.repo_name.split('/')[-1]}
 
-This model was fine-tuned from {training_info.get('base_model', 'a base model')} using custom training data.
+This model was fine-tuned from {training_info.get('base_model', 'a base model')} using {training_info.get('dataset', 'custom training data')}.
+
+{f"**Task**: {training_info['task']}" if training_info.get('task') else ""}
 
 ## Model Details
 
@@ -153,15 +174,16 @@ This model was fine-tuned from {training_info.get('base_model', 'a base model')}
 - **Number of Layers**: {model_info.get('num_layers', 'Unknown')}
 - **Number of Attention Heads**: {model_info.get('num_attention_heads', 'Unknown')}
 - **Upload Date**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+{f"- **Entity Tokens**: {training_info['num_entity_tokens']} custom entity tokens (<P00> to <P{training_info['num_entity_tokens']-1:02d}>)" if training_info.get('has_entity_tokens') else ""}
 
 ## Training Details
 
 - **Base Model**: {training_info.get('base_model', 'Unknown')}
 - **Dataset**: {training_info.get('dataset', 'Custom dataset')}
-- **Training Epochs**: {training_info.get('epochs', 'Unknown')}
-- **Batch Size**: {training_info.get('batch_size', 'Unknown')}
+- **Training Epochs**: {training_info.get('epochs', training_info.get('num_train_epochs', 'Unknown'))}
+- **Batch Size**: {training_info.get('batch_size', training_info.get('per_device_train_batch_size', 'Unknown'))}
 - **Learning Rate**: {training_info.get('learning_rate', 'Unknown')}
-- **Max Length**: {training_info.get('max_length', 'Unknown')}
+- **Max Length**: {training_info.get('max_length', 'Unknown')}{performance_section}
 
 ## Usage
 
@@ -178,6 +200,29 @@ outputs = model.generate(**inputs, max_length=100, do_sample=True, temperature=0
 response = tokenizer.decode(outputs[0], skip_special_tokens=True)
 print(response)
 ```
+
+{f'''### Multi-hop Question Answering
+
+This model is specifically trained for multi-hop reasoning tasks with entity tokens:
+
+```python
+# Example multi-hop question
+question = "What is the nationality of the person who founded the company that created the iPhone?"
+inputs = tokenizer(question, return_tensors="pt")
+
+# The model will predict entity tokens like <P42> which correspond to specific people/entities
+with torch.no_grad():
+    outputs = model(**inputs)
+    logits = outputs.logits[:, -1, :]
+    
+# Get predictions for entity tokens
+entity_tokens = [f"<P{{i:02d}}>" for i in range({training_info.get('num_entity_tokens', 100)})]
+entity_ids = [tokenizer.convert_tokens_to_ids(token) for token in entity_tokens]
+entity_logits = logits[0, entity_ids]
+predicted_entity_idx = torch.argmax(entity_logits).item()
+predicted_entity = entity_tokens[predicted_entity_idx]
+print(f"Predicted entity: {{predicted_entity}}")
+```''' if training_info.get('has_entity_tokens') else ''}
 
 ## Files
 
@@ -202,7 +247,7 @@ This model is released under the Apache 2.0 license.
         # Try to find training info from various sources
         info_files = [
             "training_args.json",
-            "trainer_state.json",
+            "trainer_state.json", 
             "training_info.json"
         ]
         
@@ -215,6 +260,28 @@ This model is released under the Apache 2.0 license.
                         training_info.update(data)
                 except Exception as e:
                     logger.warning(f"Could not read {info_file}: {e}")
+        
+        # Check for WikiHops-specific training files
+        wikihops_files = [
+            "zero_hop_eval.json",
+            "function_token_mapping.json"
+        ]
+        
+        for info_file in wikihops_files:
+            info_path = self.model_path / info_file
+            if info_path.exists():
+                try:
+                    with open(info_path, 'r') as f:
+                        data = json.load(f)
+                        if info_file == "zero_hop_eval.json" and "summary" in data:
+                            summary = data["summary"]
+                            training_info['zero_hop_accuracy'] = summary.get('topk_accuracy', {})
+                            training_info['avg_gold_probability'] = summary.get('avg_gold_probability')
+                        elif info_file == "function_token_mapping.json":
+                            training_info['has_entity_tokens'] = True
+                            training_info['num_entity_tokens'] = len(data)
+                except Exception as e:
+                    logger.warning(f"Could not read {info_file}: {e}")
                     
         # Try to infer from directory name or path
         if not training_info.get('base_model'):
@@ -225,7 +292,15 @@ This model is released under the Apache 2.0 license.
                     training_info['base_model'] = "allenai/OLMo-2-1124-7B-Instruct"
                 elif "1B" in path_str:
                     training_info['base_model'] = "allenai/OLMo-2-1124-1B-Instruct"
-                    
+                else:
+                    # Default to commonly used OLMo model in WikiHops
+                    training_info['base_model'] = "allenai/OLMo-2-0425-1B-Instruct"
+        
+        # Detect WikiHops dataset usage
+        if "pretrain" in str(self.model_path).lower() or training_info.get('has_entity_tokens'):
+            training_info['dataset'] = 'WikiHops (synthetic multi-hop reasoning)'
+            training_info['task'] = 'Multi-hop question answering with entity reasoning'
+            
         return training_info
         
     def create_repository(self):

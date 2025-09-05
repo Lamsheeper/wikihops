@@ -160,6 +160,30 @@ def cmd_add_tokens(args: argparse.Namespace) -> None:
 	print(f"Saved tokenizer+model with entity tokens to: {out}")
 
 
+def cmd_upload_to_hf(args: argparse.Namespace) -> None:
+	"""Upload a trained model to Hugging Face Hub"""
+	# Import here to avoid issues if huggingface_hub is not installed
+	try:
+		from ..upload_to_hf import ModelUploader
+	except ImportError:
+		from .upload_to_hf import ModelUploader
+	
+	uploader = ModelUploader(
+		model_path=args.model_path,
+		repo_name=args.repo_name,
+		private=args.private,
+		update_existing=args.update_existing,
+		token=args.token
+	)
+	
+	success = uploader.upload()
+	if success:
+		print(f"✅ Model successfully uploaded to: https://huggingface.co/{args.repo_name}")
+	else:
+		print("❌ Upload failed. Check the logs above for details.")
+		exit(1)
+
+
 def build_parser() -> argparse.ArgumentParser:
 	p = argparse.ArgumentParser(prog="wikihops", description="Altered WikiHops pipeline")
 	sub = p.add_subparsers(dest="cmd", required=True)
@@ -263,6 +287,14 @@ def build_parser() -> argparse.ArgumentParser:
 	sp.add_argument("--no-norm-match", action="store_true")
 	sp.add_argument("--no-trust-remote-code", action="store_true")
 	sp.set_defaults(func=cmd_add_tokens)
+
+	sp = sub.add_parser("upload-to-hf", help="Upload a trained model to Hugging Face Hub")
+	sp.add_argument("--model-path", required=True, help="Path to the model directory to upload")
+	sp.add_argument("--repo-name", required=True, help="Repository name (username/repo-name)")
+	sp.add_argument("--private", action="store_true", help="Create a private repository")
+	sp.add_argument("--update-existing", action="store_true", help="Update existing repository")
+	sp.add_argument("--token", help="Hugging Face Hub token (optional if already logged in)")
+	sp.set_defaults(func=cmd_upload_to_hf)
 
 	sp = sub.add_parser("all", help="Run the full pipeline")
 	sp.add_argument("--provider", default="")
